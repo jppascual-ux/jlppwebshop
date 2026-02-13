@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/static/css/main.b023ff0e.css",
-    "main.js": "/static/js/main.9f1f304f.js",
-    "static/js/453.92c95807.chunk.js": "/static/js/453.92c95807.chunk.js",
-    "index.html": "/index.html",
-    "main.b023ff0e.css.map": "/static/css/main.b023ff0e.css.map",
-    "main.9f1f304f.js.map": "/static/js/main.9f1f304f.js.map",
-    "453.92c95807.chunk.js.map": "/static/js/453.92c95807.chunk.js.map"
+    "main.css": "/jlppwebshop/static/css/main.b023ff0e.css",
+    "main.js": "/jlppwebshop/static/js/main.81620928.js",
+    "static/js/453.92c95807.chunk.js": "/jlppwebshop/static/js/453.92c95807.chunk.js",
+    "index.html": "/jlppwebshop/index.html",
+    "main.b023ff0e.css.map": "/jlppwebshop/static/css/main.b023ff0e.css.map",
+    "main.81620928.js.map": "/jlppwebshop/static/js/main.81620928.js.map",
+    "453.92c95807.chunk.js.map": "/jlppwebshop/static/js/453.92c95807.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.b023ff0e.css",
-    "static/js/main.9f1f304f.js"
+    "static/js/main.81620928.js"
   ]
 }
