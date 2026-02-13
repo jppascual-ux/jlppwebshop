@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/jlppwebshop/static/css/main.b023ff0e.css",
-    "main.js": "/jlppwebshop/static/js/main.81620928.js",
+    "main.js": "/jlppwebshop/static/js/main.d35afc3a.js",
     "static/js/453.92c95807.chunk.js": "/jlppwebshop/static/js/453.92c95807.chunk.js",
     "index.html": "/jlppwebshop/index.html",
     "main.b023ff0e.css.map": "/jlppwebshop/static/css/main.b023ff0e.css.map",
-    "main.81620928.js.map": "/jlppwebshop/static/js/main.81620928.js.map",
+    "main.d35afc3a.js.map": "/jlppwebshop/static/js/main.d35afc3a.js.map",
     "453.92c95807.chunk.js.map": "/jlppwebshop/static/js/453.92c95807.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.b023ff0e.css",
-    "static/js/main.81620928.js"
+    "static/js/main.d35afc3a.js"
   ]
 }
