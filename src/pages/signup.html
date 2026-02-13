@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up | PokeNiJo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="header-left">
+            <img src="logo.png" alt="PokeNiJo Logo" width="50" height="50">
+            <h1>PokeNiJo</h1>
+        </div>
+        <div class="header-right">
+            <button id="theme-switcher">🌙 Dark Mode</button>
+            <a href="cart.html" class="btn-cart">🛒 Cart</a>
+            <a href="login.html" class="btn-login">Login</a>
+        </div>
+    </header>
+
+    <div class="container">
+        <nav class="sidebar">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+
+        <main class="content">
+            <h2>Join the Community</h2>
+            <form class="contact-form" id="signup-form">
+                <div style="display: flex; gap: 10px;">
+                    <div style="flex: 1;">
+                        <label for="first-name">First Name:</label>
+                        <input type="text" id="first-name" required>
+                    </div>
+                    <div style="flex: 1;">
+                        <label for="last-name">Last Name:</label>
+                        <input type="text" id="last-name" required>
+                    </div>
+                </div>
+
+                <label for="reg-email">Email Address:</label>
+                <input type="email" id="reg-email" required>
+
+                <label for="mobile">Mobile Number:</label>
+                <input type="tel" id="mobile" placeholder="e.g. 09391234567" required>
+
+                <label for="address">Home Address:</label>
+                <textarea id="address" rows="2" placeholder="Street, City, Zip Code" required></textarea>
+
+                <label for="reg-password">Password:</label>
+                <input type="password" id="reg-password" required>
+
+                <label for="confirm-password">Confirm Password:</label>
+                <input type="password" id="confirm-password" required>
+
+                <button type="submit" class="animated-button">Create Account</button>
+            </form>
+            <p style="margin-top: 15px;">Already have an account? <a href="login.html">Login here</a></p>
+        </main>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 PokeNiJo Inc. | Contact: support@pokenijo.com</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

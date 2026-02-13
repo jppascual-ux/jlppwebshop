@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | PokeNiJo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="header-left">
+            <img src="logo.png" alt="PokeNiJo Logo" width="50" height="50">
+            <h1>PokeNiJo</h1>
+        </div>
+        <div class="header-right">
+            <button id="theme-switcher">🌙 Dark Mode</button>
+            <a href="cart.html" class="btn-cart">🛒 Cart</a>
+            <a href="login.html" class="btn-login">Login</a>
+        </div>
+    </header>
+
+    <div class="container">
+        <nav class="sidebar">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+
+        <main class="content">
+            <h2>Contact Form</h2>
+            <form class="contact-form" id="contact-form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" placeholder="Your full name" required>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="5" placeholder="How can we help you today?"></textarea>
+
+                <button type="submit">Submit Form</button>
+            </form>
+        </main>
+    </div>
+    <footer>
+        <p>&copy; 2026 PokeNiJo Inc. | Contact: support@pokenijo.com | +63 939 143 445254</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Trainer Profile | PokeNiJo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="header-left">
+            <img src="logo.png" alt="PokeNiJo Logo" width="50" height="50">
+            <h1>PokeNiJo</h1>
+        </div>
+        <div class="header-right">
+            <button id="theme-switcher">🌙 Dark Mode</button>
+            <a href="cart.html" class="btn-cart">🛒 Cart</a>
+            <a href="login.html" class="btn-login">Login</a>
+        </div>
+    </header>
+
+    <div class="container">
+        <nav class="sidebar">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+
+        <main class="content">
+            <div class="profile-grid">
+                <section class="profile-card">
+                    <h2>Trainer Info</h2>
+                    <div class="info-group">
+                        <p><strong>First Name:</strong> Jose Luis</p>
+                        <p><strong>Last Name:</strong> Pascual</p>
+                        <p><strong>Email:</strong> support@pokenijo.com</p>
+                        <p><strong>Mobile:</strong> +63 939 143 445254</p>
+                        <p><strong>Address:</strong> 123 Pallet Town St., Kanto Region</p>
+                    </div>
+                    <button class="animated-button" style="margin-top: 10px; padding: 0.5rem 1rem; font-size: 0.9rem;">Edit Profile</button>
+                </section>
+
+                <section class="profile-card">
+                    <h2>Recent Orders</h2>
+                    <div class="table-container">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Item</th>
+                                    <th>Price</th>
+                                    <th>Status</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Prismatic ETB</td>
+                                    <td>$69.99</td>
+                                    <td><span class="status-badge">Shipped</span></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </section>
+            </div>
+        </main>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 PokeNiJo Inc. | Contact: support@pokenijo.com</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

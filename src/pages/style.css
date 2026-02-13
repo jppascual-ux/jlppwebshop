@@ -1,0 +1,302 @@
+/* --- 1. Theme Variables & Root --- */
+:root {
+    --primary-color: #399494; 
+    --accent-color: #73ac31;  
+    --background-color: #ecf0f1;
+    --text-color: #2c3e50;
+    --card-bg: #ffffff;
+    --danger-color: #e74c3c;
+}
+
+.dark-theme {
+    --primary-color: #9473b4;
+    --accent-color: #5a4a9c;
+    --background-color: #34495e;
+    --text-color: #ecf0f1;
+    --card-bg: #2c3e50;
+}
+
+/* --- 2. Base Reset --- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/* --- 3. Header & Navigation --- */
+header {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.header-left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+h1 {
+    color: #fff;
+    font-size: 1.2rem;
+}
+
+.header-right {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+/* --- 4. Interactive Elements & Buttons --- */
+button, .btn-login, .animated-button {
+    background-color: var(--accent-color);
+    color: #fff;
+    border: none;
+    padding: 0.7rem 1.2rem;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 4px;
+    font-weight: bold;
+    text-decoration: none;
+    display: inline-block;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+button:hover, .btn-login:hover, .animated-button:hover {
+    transform: scale(1.1);
+    filter: brightness(1.1);
+}
+
+#theme-switcher {
+    background-color: var(--primary-color);
+    border: 1px solid #fff;
+}
+
+/* --- 5. Layout Structure --- */
+.container {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.sidebar {
+    width: 100%;
+    background-color: rgba(0,0,0,0.05);
+    padding: 15px;
+    border-bottom: 1px solid #ddd;
+}
+
+.sidebar ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.sidebar ul li a {
+    text-decoration: none;
+    color: var(--text-color);
+    font-weight: bold;
+}
+
+.sidebar ul li a.active {
+    color: var(--accent-color);
+}
+
+.content {
+    flex: 1;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+/* --- 6. Form & Layout Centering (New) --- */
+.centered-content {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+    min-height: 70vh;
+}
+
+.checkout-card {
+    width: 100%;
+    max-width: 500px;
+}
+
+/* --- 7. Product Grid & Cards --- */
+.product-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+
+.product-card {
+    border: 1px solid #ddd;
+    padding: 15px;
+    text-align: center;
+    border-radius: 8px;
+    background: var(--card-bg);
+    transition: transform 0.3s ease;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+}
+
+.product-card img {
+    width: 100%;
+    max-width: 180px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+/* --- 8. Forms & Inputs --- */
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+}
+
+/* Modified to ensure contact-form inside centered container takes full width */
+.checkout-card .contact-form {
+    max-width: 100%;
+}
+
+.contact-form input, 
+.contact-form textarea, 
+.contact-form select {
+    margin-bottom: 15px;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background: var(--card-bg);
+    color: var(--text-color);
+    font-size: 1rem;
+}
+
+/* --- 9. Checkout Summary (New) --- */
+.order-summary {
+    background-color: rgba(0, 0, 0, 0.05);
+    padding: 1.2rem;
+    border-radius: 4px;
+    margin-bottom: 1.5rem;
+}
+
+.summary-item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.5rem;
+}
+
+.summary-total {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 0.5rem;
+    padding-top: 0.5rem;
+    border-top: 1px solid #ddd;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.text-accent {
+    color: var(--accent-color);
+}
+
+/* --- 10. Tables & Profile --- */
+.profile {
+    background-color: var(--card-bg);
+    padding: 20px;
+    border-left: 5px solid var(--primary-color);
+    margin-top: 20px;
+}
+
+.profile-card {
+    background: var(--card-bg);
+    padding: 20px;
+    border-left: 5px solid var(--primary-color);
+    margin-top: 20px;
+    border-radius: 4px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+th, td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+.status-badge {
+    background: var(--accent-color);
+    color: white;
+    padding: 4px 8px;
+    border-radius: 4px;
+}
+
+/* --- 11. Footer --- */
+footer {
+    background-color: var(--primary-color);
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 0.8rem;
+    margin-top: auto;
+}
+
+/* --- 12. Desktop Layout (>768px) --- */
+@media (min-width: 768px) {
+    header { 
+        flex-direction: row; 
+        justify-content: space-between; 
+        padding: 20px 40px; 
+    }
+    .header-left { flex-direction: row; }
+    .header-left h1 { font-size: 1.5rem; }
+    .container { flex-direction: row; }
+    .sidebar { 
+        width: 200px; 
+        border-bottom: none; 
+        border-right: 1px solid #ddd; 
+    }
+    .sidebar ul { flex-direction: column; gap: 15px; }
+    .product-grid { grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); }
+}
+
+/* Styling for the new header cart button */
+.btn-cart {
+    background-color: var(--accent-color);
+    color: #fff;
+    padding: 0.7rem 1.2rem;
+    border-radius: 4px;
+    text-decoration: none;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.btn-cart:hover {
+    transform: scale(1.1);
+    filter: brightness(1.1);
+}

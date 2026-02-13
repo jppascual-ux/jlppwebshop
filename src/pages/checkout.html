@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout | PokeNiJo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="header-left">
+            <img src="logo.png" alt="PokeNiJo Logo" width="50" height="50">
+            <h1>PokeNiJo</h1>
+        </div>
+        <div class="header-right">
+            <button id="theme-switcher">🌙 Dark Mode</button>
+            <a href="cart.html" class="btn-cart">🛒 Cart</a>
+            <a href="login.html" class="btn-login">Login</a>
+        </div>
+    </header>
+
+<div class="container">
+    <nav class="sidebar">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <main class="content">
+        <div class="centered-content">
+            <div class="profile-card checkout-card">
+                <h2>Delivery & Payment</h2>
+                <p>Complete your trainer details to finish the order.</p>
+                
+                <form class="contact-form" id="checkout-form">
+                    <label for="delivery">Preferred Delivery:</label>
+                    <select id="delivery" required>
+                        <option value="standard">Standard Shipping (Free)</option>
+                        <option value="express">Pidgeot Express ($10.00)</option>
+                        <option value="overnight">Dragonite Overnight ($25.00)</option>
+                    </select>
+
+                    <label for="payment">Payment Method:</label>
+                    <select id="payment" required>
+                        <option value="card">Credit / Debit Card</option>
+                        <option value="paypal">PayPal</option>
+                        <option value="cod">Cash on Delivery</option>
+                    </select>
+
+                    <div class="order-summary">
+                        <div class="summary-item">
+                            <span>Items Total:</span>
+                            <strong>$69.99</strong>
+                        </div>
+                        <div class="summary-item text-accent">
+                            <span>Shipping:</span>
+                            <strong>Calculated</strong>
+                        </div>
+                        <div class="summary-total">
+                            <span>Total:</span>
+                            <strong>$69.99</strong>
+                        </div>
+                    </div>
+
+                    <button type="submit" class="animated-button" id="pay-btn">Complete Purchase</button>
+                </form>
+            </div>
+        </div>
+    </main>
+</div>
+
+<footer>
+    <p>&copy; 2026 PokeNiJo Inc. | Contact: support@pokenijo.com</p>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>

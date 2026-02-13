@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Confirmed | PokeNiJo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="header-left">
+            <img src="logo.png" alt="PokeNiJo Logo" width="50" height="50">
+            <h1>PokeNiJo</h1>
+        </div>
+        <div class="header-right">
+            <button id="theme-switcher">🌙 Dark Mode</button>
+            <a href="cart.html" class="btn-cart">🛒 Cart</a>
+            <a href="login.html" class="btn-login">Login</a>
+        </div>
+    </header>
+
+<div class="container">
+    <nav class="sidebar">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <main class="content">
+        <div class="centered-content">
+            <div class="profile-card checkout-card">
+                <h2 class="text-accent">Payment Confirmed!</h2>
+                <p>Thank you for your purchase, Trainer. Your order is being processed.</p>
+                
+                <div class="order-summary" style="margin-top: 20px;">
+                    <div class="summary-item">
+                        <span>Order Number:</span>
+                        <strong>#PNJ-2026-8842</strong>
+                    </div>
+                    <div class="summary-item">
+                        <span>Date:</span>
+                        <strong>January 26, 2026</strong>
+                    </div>
+                    <div class="summary-item">
+                        <span>Status:</span>
+                        <span class="status-badge">Processing</span>
+                    </div>
+                    <hr style="margin: 10px 0; border: 0; border-top: 1px solid #ddd;">
+                    <div class="summary-item">
+                        <span>Item:</span>
+                        <span>Prismatic Evolutions ETB</span>
+                    </div>
+                    <div class="summary-total">
+                        <span>Total Amount:</span>
+                        <strong>$69.99</strong>
+                    </div>
+                </div>
+
+                <div style="display: flex; gap: 10px;">
+                    <button class="animated-button" onclick="window.print()" style="flex: 1;">Print Receipt</button>
+                    <a href="products.html" class="btn-login" style="flex: 1; text-align: center; background-color: var(--primary-color);">Continue Shopping</a>
+                </div>
+            </div>
+        </div>
+    </main>
+</div>
+
+<footer>
+    <p>&copy; 2026 PokeNiJo Inc. | Thank you for choosing us!</p>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
